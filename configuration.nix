@@ -26,7 +26,7 @@
     ];
   };
 
-  security.pki.certificateFiles = [ ./secrets/certificates/ca.tsushi.net.crt ];
+  security.pki.certificateFiles = [ /etc/nixos/secrets/certificates/ca.tsushi.net.crt ];
 
   time.timeZone = "Europe/Paris";
 

@@ -1,14 +1,14 @@
 { config, inputs, ... }:
 let
-  secrets = import ./secrets/secrets.nix;
+  secrets = import /etc/nixos/secrets/secrets.nix;
 in
 {
   age.identityPaths = [ "/etc/ssh/system-wg-ssh-key" ];
   age.secrets.wg-key-nixos = {
-    file = ./secrets/keys/wg-key-nixos.age;
+    file = /etc/nixos/secrets/keys/wg-key-nixos.age;
   };
   age.secrets.wg-checkpoint-key-nixos = {
-    file = ./secrets/keys/wg-checkpoint-key-nixos.age;
+    file = /etc/nixos/secrets/keys/wg-checkpoint-key-nixos.age;
   };
 
   networking.firewall.allowedUDPPorts = [ 51820 ];
