@@ -55,7 +55,7 @@ in
           }
         ]; 
       };
-      wg-docker-project = {
+      wg-docker = {
         ips = [ "10.182.248.21/32" ];
         listenPort = 51840;
         privateKeyFile = config.age.secrets.wg-docker-project-key-nixos.path;
