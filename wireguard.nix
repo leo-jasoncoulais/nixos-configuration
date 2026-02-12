@@ -10,6 +10,10 @@ in
   age.secrets.wg-checkpoint-key-nixos = {
     file = /etc/nixos/secrets/keys/wg-checkpoint-key-nixos.age;
   };
+  age.secrets.wg-docker-project-key-nixos = {
+    file = /etc/nixos/secrets/keys/wg-docker-project-key-nixos.age;
+  };
+
 
   networking.firewall.allowedUDPPorts = [ 51820 ];
   networking.resolvconf.extraConfig = ''
@@ -47,6 +51,22 @@ in
             presharedKey = "QppaG5WlcnRgri0PNInASGnR5yFhCIRSLy+pB4BqQy8=";
             allowedIPs = [ "172.40.0.0/24" ];
             endpoint = secrets.wireguard-endpoint; 
+            persistentKeepalive = 15;
+          }
+        ]; 
+      };
+      wg-docker-project = {
+        ips = [ "10.182.248.21/32" ];
+        listenPort = 51840;
+        privateKeyFile = config.age.secrets.wg-docker-project-key-nixos.path;
+
+
+        peers = [
+          {
+            publicKey = "96J7uow8+162hxlJSaU1jvebsxEeEPztR4WkZirQBD0=";
+            presharedKey = "Yy0e8d3IL+XcKEyH32dz2caN8i/Wqm6KWZntrTmOdCE=";
+            allowedIPs = [ "192.168.5.0/24" "10.182.248.0/24" ];
+            endpoint = secrets.wireguard-docker-endpoint; 
             persistentKeepalive = 15;
           }
         ]; 
