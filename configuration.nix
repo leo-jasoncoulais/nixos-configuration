@@ -26,8 +26,6 @@
     ];
   };
 
-  security.pki.certificateFiles = [ /etc/nixos/secrets/certificates/ca.tsushi.net.crt ];
-
   time.timeZone = "Europe/Paris";
 
   i18n.defaultLocale = "fr_FR.UTF-8";
