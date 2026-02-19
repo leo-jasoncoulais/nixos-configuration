@@ -40,7 +40,6 @@
       gobuster
       wordlists
       virt-viewer
-      element-desktop
     ];
   };
 
