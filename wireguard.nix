@@ -55,22 +55,6 @@ in
           }
         ]; 
       };
-      wg-docker = {
-        ips = [ "10.182.248.21/32" ];
-        listenPort = 51840;
-        privateKeyFile = config.age.secrets.wg-docker-project-key-nixos.path;
-
-
-        peers = [
-          {
-            publicKey = "96J7uow8+162hxlJSaU1jvebsxEeEPztR4WkZirQBD0=";
-            presharedKey = "Yy0e8d3IL+XcKEyH32dz2caN8i/Wqm6KWZntrTmOdCE=";
-            allowedIPs = [ "192.168.5.0/24" "10.182.248.0/24" ];
-            endpoint = secrets.wireguard-docker-endpoint; 
-            persistentKeepalive = 15;
-          }
-        ]; 
-      };
     };
   };
 }
