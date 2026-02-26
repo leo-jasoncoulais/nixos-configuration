@@ -41,6 +41,7 @@
       wordlists
       virt-viewer
       iperf
+      remmina
     ];
   };
 
