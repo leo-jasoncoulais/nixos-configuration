@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+sudo nixos-rebuild switch --flake . --impure
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/git-ssh-key
+git add .
+git commit -m "$@"
+git push

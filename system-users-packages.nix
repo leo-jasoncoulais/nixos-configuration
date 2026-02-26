@@ -40,6 +40,7 @@
       gobuster
       wordlists
       virt-viewer
+      iperf
     ];
   };
 
