@@ -27,7 +27,7 @@ in
         ips = [ "172.30.0.5/32" ];
         listenPort = 51820;
         privateKeyFile = config.age.secrets.wg-key-nixos.path;
-	mtu = 1200;        
+	mtu = 1400;        
 
         peers = [
           {
