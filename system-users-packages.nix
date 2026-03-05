@@ -42,6 +42,7 @@
       virt-viewer
       iperf
       remmina
+      tcpdump
     ];
   };
 
