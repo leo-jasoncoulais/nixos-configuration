@@ -43,6 +43,7 @@
       iperf
       remmina
       tcpdump
+      gns3-server
     ];
   };
 
