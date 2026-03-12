@@ -44,6 +44,7 @@
       remmina
       tcpdump
       gns3-server
+      btop
     ];
   };
 
