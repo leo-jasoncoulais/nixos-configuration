@@ -21,6 +21,7 @@
         ./boot-configuration.nix
         ./system-users-packages.nix
 	./wireguard.nix
+	./android.nix
         inputs.agenix.nixosModules.default
       ];
 
