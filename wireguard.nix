@@ -39,7 +39,7 @@ in
           }
         ];
       };
-      wg0-check = {
+      checkpoint = {
         ips = [ "172.40.0.6/32" ];
         listenPort = 51830;
         privateKeyFile = config.age.secrets.wg-checkpoint-key-nixos.path;
