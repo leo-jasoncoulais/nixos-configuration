@@ -45,6 +45,7 @@
       tcpdump
       gns3-server
       btop
+      ubridge
     ];
   };
 
