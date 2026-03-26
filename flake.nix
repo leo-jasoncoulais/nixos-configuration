@@ -28,8 +28,8 @@
     };
 
     devShells.x86_64-linux = {
-      default = nixpkgs.mkShell {
-        buildInputs = [ nixpkgs.cmake ]; 
+      default = nixpkgs.legacyPackages.x86_64-linux.mkShell {
+        buildInputs = [ nixpkgs.legacyPackages.x86_64-linux.cmake ]; 
       };
     };
   };
