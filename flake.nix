@@ -32,6 +32,7 @@
         buildInputs = [
           nixpkgs.legacyPackages.x86_64-linux.cmake
           nixpkgs.legacyPackages.x86_64-linux.pkg-config
+          nixpkgs.legacyPackages.x86_64-linux.elfutils
         ]; 
       };
     };
