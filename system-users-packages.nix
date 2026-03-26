@@ -47,6 +47,7 @@
       btop
       ubridge
       xterm
+      telnet
     ];
   };
 
