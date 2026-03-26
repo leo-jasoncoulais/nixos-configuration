@@ -51,6 +51,14 @@
     ];
   };
 
+  security.wrappers.ubridge = {
+    source = "${pkgs.ubridge}/bin/ubridge";
+    capabilities = "cap_net_admin,cap_net_raw=ep";
+    owner = "root";
+    group = "ubridge"; # Assurez-vous que ce groupe existe ou utilisez "users"
+    permissions = "u+rx,g+rx,o+rx";
+  };
+
   # Services and programs
   services.libinput.enable = true;
   services.openssh.enable = true;
