@@ -12,6 +12,7 @@
 
   # Groups configuration
   users.groups.nixos-conf = {};
+  users.groups.ubridge = {};
 
   # Users configuration
   users.users.nit = {
