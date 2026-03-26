@@ -46,6 +46,7 @@
       gns3-server
       btop
       ubridge
+      xterm
     ];
   };
 
