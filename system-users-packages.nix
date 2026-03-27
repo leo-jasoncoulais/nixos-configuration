@@ -12,7 +12,6 @@
 
   # Groups configuration
   users.groups.nixos-conf = {};
-  users.groups.ubridge = {};
 
   # Users configuration
   users.users.nit = {
@@ -35,7 +34,6 @@
       jdk
       tree
       git
-      gns3-gui
       realvnc-vnc-viewer
       nmap
       gobuster
@@ -44,20 +42,9 @@
       iperf
       remmina
       tcpdump
-      gns3-server
       btop
-      ubridge
-      xterm
       inetutils
     ];
-  };
-
-  security.wrappers.ubridge = {
-    source = "${pkgs.ubridge}/bin/ubridge";
-    capabilities = "cap_net_admin,cap_net_raw=ep";
-    owner = "root";
-    group = "ubridge"; # Assurez-vous que ce groupe existe ou utilisez "users"
-    permissions = "u+rx,g+rx,o+rx";
   };
 
   # Services and programs
