@@ -22,6 +22,7 @@
         ./system-users-packages.nix
 	./wireguard.nix
 	./android.nix
+	./postgres.nix
         inputs.agenix.nixosModules.default
       ];
 
