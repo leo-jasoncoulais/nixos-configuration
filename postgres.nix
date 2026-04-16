@@ -1,6 +1,7 @@
 
 { config, lib, pkgs, ... }:
 
+{
   services.postgresql = {
     enable = true;
     package = pkgs.postgresql_16;
@@ -12,3 +13,4 @@
       host  all  all  0.0.0.0/0  md5
     '';
   };
+}
