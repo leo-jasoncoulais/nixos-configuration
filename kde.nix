@@ -14,7 +14,7 @@
     kdePackages.kclock
     kdePackages.ksystemlog
     kdePackages.sddm-kcm
-    kdePackages.printer_manager
+    printer_manager
     kdiff3
     kdePackages.partitionmanager
     wayland-utils
