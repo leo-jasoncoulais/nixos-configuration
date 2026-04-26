@@ -34,6 +34,8 @@
     openFirewall = true;
   };
 
+  services.printing.drivers = [ pkgs.cnijfilter2 ];
+
   time.timeZone = "Europe/Paris";
 
   i18n.defaultLocale = "fr_FR.UTF-8";
