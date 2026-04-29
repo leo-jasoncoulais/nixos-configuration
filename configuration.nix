@@ -14,6 +14,8 @@
 
   networking.networkmanager.enable = true;
 
+  programs.direnv.enable = true;
+
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
