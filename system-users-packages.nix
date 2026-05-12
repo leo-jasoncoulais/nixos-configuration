@@ -44,6 +44,7 @@
       tcpdump
       btop
       inetutils
+      pakku
       opencode
     ];
   };
