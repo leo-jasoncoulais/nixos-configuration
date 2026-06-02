@@ -32,7 +32,6 @@ in
         peers = [
           {
             publicKey = "nQ2/+sCfQAlR1xslmlOTqAkekVxJLFdhMPEIXmCVKiI=";
-            presharedKey = "cxRMeype8/V1MMtakr8DU+pM2G0BcmFK2l0WwU7VRZw=";
             allowedIPs = [ "172.30.0.0/24" ];
             endpoint = secrets.wireguard-endpoint;
             persistentKeepalive = 15;
@@ -48,7 +47,6 @@ in
         peers = [
           {
             publicKey = "nQ2/+sCfQAlR1xslmlOTqAkekVxJLFdhMPEIXmCVKiI=";
-            presharedKey = "QppaG5WlcnRgri0PNInASGnR5yFhCIRSLy+pB4BqQy8=";
             allowedIPs = [ "172.40.0.0/24" ];
             endpoint = secrets.wireguard-endpoint; 
             persistentKeepalive = 15;
